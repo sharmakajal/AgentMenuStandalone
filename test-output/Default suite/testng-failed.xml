@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="aafly.ssm.agentmenu.test.AgentAuthentication_Login_Test">
+        <methods>
+          <include name="agentMenuContinueBtn"/>
+          <include name="closeApplication"/>
+          <include name="publishExtentReport"/>
+          <include name="initilizeDriver"/>
+          <include name="initlizeExtentReportsObject"/>
+          <include name="startTest"/>
+          <include name="logResults"/>
+        </methods>
+      </class> <!-- aafly.ssm.agentmenu.test.AgentAuthentication_Login_Test -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
