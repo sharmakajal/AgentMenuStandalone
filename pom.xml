@@ -1,65 +1,89 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-       <modelVersion>4.0.0</modelVersion>
-       <groupId>AA_FLY_AGENT_MENU</groupId>
-       <artifactId>AA_FLY_AGENT_MENU</artifactId>
-       <version>0.0.1-SNAPSHOT</version>
-<build>
-              <!-- <sourceDirectory>src</sourceDirectory> -->
-              <plugins>
-                     <!-- Compiler plug-in -->
-                     <plugin>
-                           <groupId>org.apache.maven.plugins</groupId>
-                           <artifactId>maven-compiler-plugin</artifactId>
-                           <version>2.3.2</version>
-                           <configuration>
-                                  <source>1.8</source>
-                                  <target>1.8</target>
-                           </configuration>
-                     </plugin>
-                     <!-- Below plug-in is used to execute tests -->
-                     <plugin>
-                           <groupId>org.apache.maven.plugins</groupId>
-                           <artifactId>maven-surefire-plugin</artifactId>
-                           <version>2.18.1</version>
-                           <inherited>true</inherited>
-                           <configuration>
-                                  <suiteXmlFiles>
-                                         <!-- TestNG suite XML files -->
-                                         <!-- <suiteXmlFile>C:/AA/WorkSpace_FLY/AA_FLY_AGENT_MENU/testng.xml</suiteXmlFile> -->
-                                         <suiteXmlFile>testng.xml</suiteXmlFile>
-                                  </suiteXmlFiles>
-                           </configuration>
-                     </plugin>
-                     </plugins>
-       </build>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>AA_FLY_AGENT_MENU</groupId>
+	<artifactId>AA_FLY_AGENT_MENU</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<build>
+		<!-- <sourceDirectory>src</sourceDirectory> -->
+		<plugins>
+			<!-- Compiler plug-in -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<!-- Below plug-in is used to execute tests -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<inherited>true</inherited>
+				<configuration>
+					<suiteXmlFiles>
+						<!-- TestNG suite XML files -->
+						<!-- <suiteXmlFile>C:/AA/WorkSpace_FLY/AA_FLY_AGENT_MENU/testng.xml</suiteXmlFile> -->
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
-       <dependencies>
-       
-              <dependency>
-                     <groupId>com.aa.app</groupId>
-                     <artifactId>selenium-server-standalone</artifactId>
-                     <version>3.4.0</version>
-              </dependency>
-              
-                        <dependency>
-                    <groupId>org.testng</groupId>
-                    <artifactId>testng</artifactId>
-                    <version>6.8</version>
-                    <scope>test</scope>
-              </dependency>
-              
-                    <dependency>
-                     <groupId>org.extentreports</groupId>
-                     <artifactId>extentreports</artifactId>
-                     <version>2.41.1</version>
-              </dependency>
-              
-              <dependency>
-    				<groupId>org.freemarker</groupId>
-    				<artifactId>freemarker</artifactId>
-    				<version>2.3.23</version>
-			</dependency>
-              
-             </dependencies>
+	<dependencies>
+
+		<dependency>
+			<groupId>com.aa.app</groupId>
+			<artifactId>selenium-server-standalone</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.8</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.aa.app</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>2.41.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-chrome-driver</artifactId>
+			<version>2.50.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-ie-driver</artifactId>
+			<version>2.46.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.aa.app</groupId>
+			<artifactId>jxl</artifactId>
+			<version>2.6.12</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.aa.app</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>2.41.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.aa.app</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.23</version>
+		</dependency>
+
+	</dependencies>
 </project>
